@@ -1,3 +1,59 @@
+@import "~bootstrap/scss/bootstrap";
 .App {
   text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Monument Extended";
+  line-height: 1.25;
+  letter-spacing: 0.2rem;
+}
+
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 100;
+
+  .nav-bar-inner {
+    display: flex;
+    justify-content: space-around;
+    width: 1400px;
+    align-items: center;
+    height: 100px;
+    font-family: "Monument Extended";
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin: auto;
+
+    .abt-dropdown {
+      .btn {
+        background-color: white;
+        color: darkblue;
+        border: none;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .dropdown-item {
+        a {
+          font-size: 0.8rem;
+          color: darkblue;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: darkblue;
+    }
+  }
 }

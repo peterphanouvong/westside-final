@@ -1,0 +1,173 @@
+.home {
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/hero.jpg") center center / cover;
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      color: white;
+    }
+    p {
+      letter-spacing: 0.2rem;
+      color: white;
+    }
+    border-bottom: 2px solid blue;
+  }
+
+  .about-section {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 2px solid blue;
+    padding: 3rem 0;
+    .about-part {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem;
+      .abt-content {
+        h3 {
+          font-size: 1.3rem;
+          margin-bottom: 2rem;
+        }
+        color: darkblue;
+      }
+
+      .abt-img {
+        background: url("../images/womens.jpg");
+        height: 700px;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .teams {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 3rem 0;
+
+    .teams-slide {
+      position: relative;
+      height: 700px;
+      top: 0;
+    }
+
+    .mens,
+    .slide-cover,
+    .womens,
+    .juniors {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      h2 {
+        position: relative;
+        color: white;
+        z-index: 2;
+        padding: 0.5rem 0rem;
+      }
+      .teams-slide-hover {
+        color: white;
+        padding: 0.5rem 2.5rem;
+        transition: 0.2s ease;
+        background-color: darkblue;
+      }
+    }
+
+    .mens {
+      background: url("../images/mens.jpg") center center;
+      background-size: cover;
+    }
+    .womens {
+      background: url("../images/womens.jpg") center center;
+      background-size: cover;
+    }
+    .slide-cover {
+      width: 100%;
+      z-index: 1;
+      background-color: rgb(5, 5, 20);
+      opacity: 0.6;
+      transition: 0.3s ease;
+
+      &:hover {
+        opacity: 0;
+        transition: 0.3s ease;
+      }
+    }
+    .juniors {
+      background: url("../images/juniors.jpg") center top;
+    }
+  }
+
+  .socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem 0;
+
+    .socials-slide {
+      position: relative;
+      height: 700px;
+      top: 0;
+    }
+
+    .social-training,
+    .slide-cover,
+    .social-comps {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      h2 {
+        position: relative;
+        color: white;
+        z-index: 2;
+        padding: 0.5rem 0rem;
+      }
+      .teams-slide-hover {
+        color: white;
+        padding: 0.5rem 2.5rem;
+        transition: 0.2s ease;
+        background-color: darkblue;
+      }
+    }
+
+    .slide-cover {
+      width: 100%;
+      z-index: 1;
+      background-color: rgb(5, 5, 20);
+      opacity: 0.6;
+      transition: 0.3s ease;
+
+      &:hover {
+        opacity: 0;
+        transition: 0.3s ease;
+      }
+    }
+
+    .social-comps {
+      background: url("../images//social-comp.jpg") center center / cover;
+    }
+
+    .social-training {
+      background: url("../images//social-training.jpg") center center / cover;
+    }
+  }
+}

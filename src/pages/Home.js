@@ -1,51 +1,50 @@
 import React from "react";
+import SocialsSlide from "../components/home/SocialsSlide";
+import TeamsSlide from "../components/home/TeamsSlide";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <div className="hero">
-        <h1>join the movement</h1>
-        <h4>be a part of the fun at Westside</h4>
+        <h1>join the whanau</h1>
+        <p>Be a part of the Westside fam</p>
       </div>
 
       <div className="about-section">
-        <div className="about-one">
-          <h2>We cater to all players</h2>
-          <p>from beginners to elite players, westside has your back.</p>
-          <p>We promote unity in the community through our sport</p>
-          <p>See our community events.</p>
+        <div className="about-two about-part">
+          <div className="abt-img"></div>
+          <div className="abt-content">
+            <h3>For all players at any skill level</h3>
+            <p>
+              From beginners to elite players, westside has your back. We aim to
+              promote unity in the community through our sport.
+            </p>
+          </div>
         </div>
-        <div className="about-two">
-          <h2>
-            We are the volleyball community in the South West Sydney region
-          </h2>
-          <p>
-            Come and play with us at Fairfield Leisure Centre, Cabramatta PCYC
-            and Minto Leisure Centre.
-          </p>
+        <div className="about-one about-part">
+          <div className="abt-content">
+            <h3>South West Sydney's volleyball hub</h3>
+            <p>
+              Come and find us in the area. Play with us at Fairfield Leisure
+              Centre, Cabramatta PCYC and Minto Leisure Centre.
+            </p>
+          </div>
+          <div className="abt-img"></div>
+        </div>
+        <div className="about-two about-part">
+          <div className="abt-img"></div>
+          <div className="abt-content">
+            <h3>Play how you want to play</h3>
+            <p>
+              Whether you want to play reps, develop your skills or just play
+              for fun, Westside caters to you!
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="teams">
-        <div className="womens">
-          <h2>womens</h2>
-        </div>
-        <div className="mens">
-          <h2>mens</h2>
-        </div>
-        <div className="juniors">
-          <h2>juniors</h2>
-        </div>
-      </div>
-
-      <div className="socials">
-        <div className="social-trainings">
-          <h2>Social trainings</h2>
-        </div>
-        <div className="social-competitions">
-          <h2>Social competitions</h2>
-        </div>
-      </div>
+      <TeamsSlide />
+      <SocialsSlide />
     </div>
   );
 };

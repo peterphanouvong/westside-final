@@ -13,18 +13,20 @@ import Navbar from "./components/common/Navbar";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/shop" component={Shop} />
-        <Route path="/about/coaches" component={Coaches} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/fixtures" component={Fixtures} />
-        <Route path="/registrations" component={Registrations} />
-        <Route component={NotFound} />
-      </Switch>
-    </Router>
+    <div>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/shop" component={Shop} />
+          <Route path="/about/coaches" component={Coaches} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/fixtures" component={Fixtures} />
+          <Route path="/registrations" component={Registrations} />
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
