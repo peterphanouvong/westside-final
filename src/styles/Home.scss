@@ -15,7 +15,6 @@
       letter-spacing: 0.2rem;
       color: white;
     }
-    border-bottom: 2px solid blue;
   }
 
   .about-section {
@@ -23,7 +22,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: 2px solid blue;
+
     padding: 3rem 0;
     .about-part {
       display: flex;
@@ -34,11 +33,20 @@
           font-size: 1.3rem;
           margin-bottom: 2rem;
         }
-        color: darkblue;
+        color: #333;
+      }
+
+      .skill-level-img {
+        background: url("../images/chillin.jpg");
+      }
+      .hub-img {
+        background: url("../images/gametime.jpg");
+      }
+      .play-img {
+        background: url("../images/confusing.jpg");
       }
 
       .abt-img {
-        background: url("../images/womens.jpg");
         height: 700px;
         margin-bottom: 2rem;
       }
@@ -169,5 +177,9 @@
     .social-training {
       background: url("../images//social-training.jpg") center center / cover;
     }
+  }
+
+  .contact-section {
+    height: 100vh;
   }
 }

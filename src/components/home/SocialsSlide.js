@@ -8,7 +8,7 @@ const SocialsSlide = () => {
   const compsStyleClass = cHover ? "teams-slide-hover" : "";
 
   return (
-    <div className="socials">
+    <div className="socials" id="socials-section">
       <div
         onMouseEnter={() => setWHover(true)}
         onMouseLeave={() => setWHover(false)}

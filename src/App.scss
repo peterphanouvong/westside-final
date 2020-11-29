@@ -20,6 +20,17 @@ h4 {
   background-color: white;
   z-index: 100;
 
+  .nav-active {
+    border-bottom: 2px solid darkblue;
+  }
+
+  .nav-link {
+    &:hover {
+      color: rgb(43, 43, 202);
+      cursor: pointer;
+    }
+  }
+
   .nav-bar-inner {
     display: flex;
     justify-content: space-around;

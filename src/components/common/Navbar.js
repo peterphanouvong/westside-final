@@ -16,15 +16,32 @@ const Navbar = () => {
     setShowAbout(false);
   };
 
-  // scrollToTop = () => {
-  //   scroll.scrollToTop();
-  // };
-
   return (
     <div className="nav-bar">
       <div className="nav-bar-inner">
-        <Link to="/">Home</Link>
-        <DropdownButton
+        <ScrollLink
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          to="about-section"
+          className="nav-link"
+          activeClass="nav-active"
+        >
+          About
+        </ScrollLink>
+        <ScrollLink
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          to="reps-section"
+          className="nav-link"
+          activeClass="nav-active"
+        >
+          Rep Teams
+        </ScrollLink>
+        {/* <DropdownButton
           className="abt-dropdown"
           title="About"
           onMouseEnter={showAboutDropdown}
@@ -51,12 +68,35 @@ const Navbar = () => {
           <Dropdown.Item>
             <Link to="/socials">Socials</Link>
           </Dropdown.Item>
-        </DropdownButton>
+        </DropdownButton> */}
 
-        <Link to="/">
+        <Link onClick={() => scroll.scrollToTop()}>
           <img src={logo} alt="" width="150px" />
         </Link>
-        <Link to="/shop">Shop</Link>
+
+        <ScrollLink
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="nav-link"
+          to="socials-section"
+          activeClass="nav-active"
+        >
+          Socials
+        </ScrollLink>
+        <ScrollLink
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="nav-link"
+          to="contact-section"
+          activeClass="nav-active"
+        >
+          Contact
+        </ScrollLink>
+        {/* <Link to="/shop">Shop</Link>
 
         <DropdownButton
           className="abt-dropdown"
@@ -74,7 +114,7 @@ const Navbar = () => {
           <Dropdown.Item>
             <Link to="/reps">Sponsor Us</Link>
           </Dropdown.Item>
-        </DropdownButton>
+        </DropdownButton> */}
       </div>
     </div>
   );
