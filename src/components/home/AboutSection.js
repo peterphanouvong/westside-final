@@ -4,7 +4,6 @@ const AboutSection = () => {
   return (
     <div className="about-section" id="about-section">
       <div className="about-two about-part">
-        <div className="abt-img skill-level-img"></div>
         <div className="abt-content ">
           <h3>For all players at any skill level</h3>
           <p>
@@ -12,6 +11,7 @@ const AboutSection = () => {
             promote unity in the community through our sport.
           </p>
         </div>
+        <div className="abt-img skill-level-img"></div>
       </div>
       <div className="about-one about-part">
         <div className="abt-content">
@@ -24,14 +24,14 @@ const AboutSection = () => {
         <div className="abt-img hub-img"></div>
       </div>
       <div className="about-two about-part">
-        <div className="abt-img play-img"></div>
         <div className="abt-content">
           <h3>Play how you want to play</h3>
           <p>
             Whether you want to play reps, develop your skills or just play for
-            fun, Westside caters to you!
+            fun, Westside caters to you! Join in on the action.
           </p>
         </div>
+        <div className="abt-img play-img"></div>
       </div>
     </div>
   );

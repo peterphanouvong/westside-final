@@ -4,7 +4,7 @@ import Contact from "../Contact";
 
 const JuniorsReps = () => {
   return (
-    <div className="reps containerbox">
+    <div className="reps page">
       <h1>Junior reps</h1>
       <h2>SVL Teams</h2>
       <ul>

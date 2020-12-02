@@ -1,3 +1,6 @@
+$breakpoint-laptop: 1400px;
+$breakpoint-tablet: 768px;
+
 .home {
   .hero {
     height: 100vh;
@@ -6,6 +9,7 @@
     justify-content: center;
     align-items: center;
     background: url("../images/hero.jpg") center center / cover;
+    text-align: center;
     h1 {
       text-transform: uppercase;
       letter-spacing: 0.3rem;
@@ -23,11 +27,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
+    @media only screen and (max-width: $breakpoint-laptop) {
+      display: flex;
+      flex-direction: column;
+    }
+
     padding: 3rem 0;
     .about-part {
       display: flex;
       flex-direction: column;
       padding: 4rem;
+      @media only screen and (max-width: $breakpoint-laptop) {
+        padding: 0;
+      }
       .abt-content {
         h3 {
           font-size: 1.3rem;
@@ -37,7 +49,7 @@
       }
 
       .skill-level-img {
-        background: url("../images/confusing.png");
+        background: url("../images/confusing.png") center center / cover;
       }
       .hub-img {
         background: url("../images/junior-girls.jpeg") center center / cover;
@@ -56,6 +68,11 @@
   .teams {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    @media only screen and (max-width: $breakpoint-laptop) {
+      display: flex;
+      flex-direction: column;
+    }
 
     .teams-slide {
       position: relative;
@@ -114,12 +131,19 @@
     }
     .juniors {
       background: url("../images/juniors.jpg") center top;
+      background-size: cover;
     }
   }
 
   .socials {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-laptop) {
+      display: flex;
+      flex-direction: column;
+    }
 
     .socials-slide {
       position: relative;

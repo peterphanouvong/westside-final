@@ -1,3 +1,5 @@
+$breakpoint-laptop: 1400px;
+$breakpoint-tablet: 768px;
 @import "~bootstrap/scss/bootstrap";
 .App {
   text-align: center;
@@ -81,6 +83,9 @@ h4 {
     text-align: left;
     width: 500px;
     margin: auto;
+    @media only screen and (max-width: $breakpoint-laptop) {
+      width: 80%;
+    }
     .form-group {
       display: flex;
       flex-direction: column;
@@ -117,7 +122,23 @@ h4 {
 
 .page {
   padding-top: 100px;
-  width: 1400px;
   margin: auto;
+  width: 1440px;
   min-height: 90vh;
+  @media only screen and (max-width: $breakpoint-laptop) {
+    width: 80%;
+    font-size: 0.7rem;
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.nav-link {
+  @media only screen and (max-width: $breakpoint-laptop) {
+    display: none;
+  }
 }
