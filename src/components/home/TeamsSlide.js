@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
 
 const TeamsSlide = () => {
   const [wHover, setWHover] = useState(false);
@@ -9,11 +10,18 @@ const TeamsSlide = () => {
   const mensStyleClass = mHover ? "teams-slide-hover" : "";
   const juniorsStyleClass = jHover ? "teams-slide-hover" : "";
 
+  const history = useHistory();
+
+  const handleRedirect = (url) => {
+    history.push(url);
+  };
+
   return (
     <div className="teams" id="reps-section">
       <div
         onMouseEnter={() => setWHover(true)}
         onMouseLeave={() => setWHover(false)}
+        onClick={() => handleRedirect("/reps/womens")}
         className="teams-slide"
       >
         <div className="womens">
@@ -24,6 +32,7 @@ const TeamsSlide = () => {
       <div
         onMouseEnter={() => setMHover(true)}
         onMouseLeave={() => setMHover(false)}
+        onClick={() => handleRedirect("/reps/mens")}
         className="teams-slide"
       >
         <div className="mens ">
@@ -34,6 +43,7 @@ const TeamsSlide = () => {
       <div
         onMouseEnter={() => setJHover(true)}
         onMouseLeave={() => setJHover(false)}
+        onClick={() => handleRedirect("/reps/juniors")}
         className="teams-slide"
       >
         <div className="juniors ">

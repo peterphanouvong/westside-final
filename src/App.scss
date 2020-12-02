@@ -12,6 +12,11 @@ h4 {
   letter-spacing: 0.2rem;
 }
 
+.containerbox {
+  width: 1400px;
+  margin: auto;
+}
+
 .nav-bar {
   width: 100%;
   position: fixed;
@@ -67,4 +72,52 @@ h4 {
       color: darkblue;
     }
   }
+}
+
+.contact-section {
+  margin: 5rem auto;
+  text-align: center;
+  form {
+    text-align: left;
+    width: 500px;
+    margin: auto;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .submit-btn {
+      width: 100%;
+    }
+  }
+}
+
+.footer {
+  .footer-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkblue;
+    padding: 2rem;
+    a {
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef200;
+    padding: 0.5rem;
+  }
+}
+
+.page {
+  padding-top: 100px;
+  width: 1400px;
+  margin: auto;
+  min-height: 90vh;
 }

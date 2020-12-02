@@ -37,13 +37,13 @@
       }
 
       .skill-level-img {
-        background: url("../images/chillin.jpg");
+        background: url("../images/confusing.png");
       }
       .hub-img {
-        background: url("../images/gametime.jpg");
+        background: url("../images/junior-girls.jpeg") center center / cover;
       }
       .play-img {
-        background: url("../images/confusing.jpg");
+        background: url("../images/hugs.jpg") center center / cover;
       }
 
       .abt-img {
@@ -56,7 +56,6 @@
   .teams {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 3rem 0;
 
     .teams-slide {
       position: relative;
@@ -121,7 +120,6 @@
   .socials {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 3rem 0;
 
     .socials-slide {
       position: relative;
@@ -171,15 +169,11 @@
     }
 
     .social-comps {
-      background: url("../images//social-comp.jpg") center center / cover;
+      background: url("../images//social-comp.PNG") center center / cover;
     }
 
     .social-training {
-      background: url("../images//social-training.jpg") center center / cover;
+      background: url("../images//social-training.png") center center / cover;
     }
-  }
-
-  .contact-section {
-    height: 100vh;
   }
 }

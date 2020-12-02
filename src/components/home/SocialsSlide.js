@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const SocialsSlide = () => {
   const [tHover, setWHover] = useState(false);
@@ -7,11 +8,18 @@ const SocialsSlide = () => {
   const trainingStyleClass = tHover ? "teams-slide-hover" : "";
   const compsStyleClass = cHover ? "teams-slide-hover" : "";
 
+  const history = useHistory();
+
+  const handleRedirect = (url) => {
+    history.push(url);
+  };
+
   return (
     <div className="socials" id="socials-section">
       <div
         onMouseEnter={() => setWHover(true)}
         onMouseLeave={() => setWHover(false)}
+        onClick={() => handleRedirect("/socials/training")}
         className="socials-slide"
       >
         <div className="social-training">
@@ -22,6 +30,7 @@ const SocialsSlide = () => {
       <div
         onMouseEnter={() => setMHover(true)}
         onMouseLeave={() => setMHover(false)}
+        onClick={() => handleRedirect("/socials/competitions")}
         className="socials-slide"
       >
         <div className="social-comps">
