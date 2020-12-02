@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../styles/Home.scss";
 import { Link } from "react-router-dom";
-import {
-  Link as ScrollLink,
-  animateScroll as scroll,
-  scroller,
-} from "react-scroll";
+import { animateScroll as scroll, scroller } from "react-scroll";
 
 import logo from "../../images/logo.png";
 
