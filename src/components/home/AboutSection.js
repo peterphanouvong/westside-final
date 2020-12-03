@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useIntersection } from "react-use";
+import gsap from "gsap";
 
 const AboutSection = () => {
+  const aboutSectionRef = useRef(null);
+  const intersection = useIntersection(aboutSectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  });
+
+  const fadeIn = (element) => {
+    gsap.to(element, {
+      duration: 1.2,
+      height: 0,
+      ease: "Power4.easeOut",
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  };
+
+  !intersection || (!(intersection.intersectionRatio < 0.5) && fadeIn(".mask"));
+
   return (
-    <div className="about-section" id="about-section">
+    <div ref={aboutSectionRef} className="about-section" id="about-section">
       <div className="about-two about-part">
         <div className="abt-content ">
           <h3>For all players at any skill level</h3>
@@ -12,6 +34,7 @@ const AboutSection = () => {
           </p>
         </div>
         <div className="abt-img skill-level-img"></div>
+        <div className="mask"></div>
       </div>
       <div className="about-one about-part">
         <div className="abt-content">
@@ -22,6 +45,7 @@ const AboutSection = () => {
           </p>
         </div>
         <div className="abt-img hub-img"></div>
+        <div className="mask"></div>
       </div>
       <div className="about-two about-part">
         <div className="abt-content">
@@ -32,6 +56,7 @@ const AboutSection = () => {
           </p>
         </div>
         <div className="abt-img play-img"></div>
+        <div className="mask"></div>
       </div>
     </div>
   );
