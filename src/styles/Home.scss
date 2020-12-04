@@ -31,6 +31,7 @@ $breakpoint-tablet: 768px;
 
     .family:before {
       content: "";
+      -webkit-animation: animate infinite 8s;
       animation: animate infinite 8s;
     }
 
