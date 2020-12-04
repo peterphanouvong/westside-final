@@ -54,6 +54,26 @@ $breakpoint-tablet: 768px;
         content: "Whānau";
       }
     }
+    @-webkit-keyframes animate {
+      0% {
+        content: "Whānau";
+      }
+      20% {
+        content: "gia đình";
+      }
+      40% {
+        content: "family";
+      }
+      60% {
+        content: "家庭";
+      }
+      80% {
+        content: "tribe";
+      }
+      100% {
+        content: "Whānau";
+      }
+    }
   }
 
   .about-section {
