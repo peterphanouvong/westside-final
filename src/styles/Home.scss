@@ -1,4 +1,4 @@
-$breakpoint-laptop: 1400px;
+$breakpoint-laptop: 1300px;
 $breakpoint-tablet: 768px;
 
 .home {
@@ -55,7 +55,7 @@ $breakpoint-tablet: 768px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    @media only screen and (max-width: $breakpoint-laptop) {
+    @media only screen and (max-width: $breakpoint-tablet) {
       display: flex;
       flex-direction: column;
     }
@@ -66,8 +66,9 @@ $breakpoint-tablet: 768px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      padding: 4rem;
-      @media only screen and (max-width: $breakpoint-laptop) {
+      padding: 1rem;
+      min-height: 700px;
+      @media only screen and (max-width: $breakpoint-tablet) {
         padding: 0;
       }
       .abt-content {
@@ -89,7 +90,7 @@ $breakpoint-tablet: 768px;
       }
 
       .abt-img {
-        height: 700px;
+        height: 100%;
         margin-bottom: 2rem;
       }
       .mask {
@@ -107,14 +108,14 @@ $breakpoint-tablet: 768px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    @media only screen and (max-width: $breakpoint-laptop) {
+    @media only screen and (max-width: $breakpoint-tablet) {
       display: flex;
       flex-direction: column;
     }
 
     .teams-slide {
       position: relative;
-      height: 700px;
+      height: 500px;
       top: 0;
     }
 
@@ -178,14 +179,14 @@ $breakpoint-tablet: 768px;
     grid-template-columns: 1fr 1fr;
     text-align: center;
 
-    @media only screen and (max-width: $breakpoint-laptop) {
+    @media only screen and (max-width: $breakpoint-tablet) {
       display: flex;
       flex-direction: column;
     }
 
     .socials-slide {
       position: relative;
-      height: 700px;
+      height: 500px;
       top: 0;
     }
 
