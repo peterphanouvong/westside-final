@@ -36,7 +36,10 @@ const WomensReps = () => {
         <br />
       </ul>
       <h2>Tryouts</h2>
-      <p>Tryouts are held before the start of each SVL season (June).</p>
+      <p>
+        Tryouts for Westside Volleyball Reps teams are held before the start of
+        each SVL season (June).
+      </p>
       <br />
       <h2>Trainings</h2>
       <p>

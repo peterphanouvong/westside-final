@@ -1,5 +1,11 @@
 $breakpoint-laptop: 1400px;
 $breakpoint-tablet: 768px;
+
+@font-face {
+  font-family: "Monument Extended Special";
+  src: url("./MonumentExtended-Regular.otf");
+}
+
 @import "~bootstrap/scss/bootstrap";
 .App {
   text-align: center;
@@ -9,13 +15,13 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Monument Extended";
+  font-family: "Monument Extended Special";
   line-height: 1.25;
   letter-spacing: 0.2rem;
 }
 
 .containerbox {
-  width: 1400px;
+  width: 1100px;
   margin: auto;
 }
 
@@ -44,7 +50,7 @@ h4 {
     width: 1400px;
     align-items: center;
     height: 100px;
-    font-family: "Monument Extended";
+    font-family: "Monument Extended Special";
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 100;
@@ -83,7 +89,7 @@ h4 {
     text-align: left;
     width: 500px;
     margin: auto;
-    @media only screen and (max-width: $breakpoint-laptop) {
+    @media only screen and (max-width: $breakpoint-tablet) {
       width: 80%;
     }
     .form-group {
@@ -123,9 +129,9 @@ h4 {
 .page {
   padding-top: 100px;
   margin: auto;
-  width: 1440px;
+  width: 1100px;
   min-height: 90vh;
-  @media only screen and (max-width: $breakpoint-laptop) {
+  @media only screen and (max-width: $breakpoint-tablet) {
     width: 80%;
     font-size: 0.7rem;
     h1 {
@@ -138,7 +144,7 @@ h4 {
 }
 
 .nav-link {
-  @media only screen and (max-width: $breakpoint-laptop) {
+  @media only screen and (max-width: $breakpoint-tablet) {
     display: none;
   }
 }
